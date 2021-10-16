@@ -1,0 +1,12 @@
+class Solution {
+public int countNodes(TreeNode root) {
+if(root==null)
+return 0;
+
+    int ls=countNodes(root.left);
+    int rs=countNodes(root.right);
+    
+    return ls+rs+1;
+    
+}
+}
